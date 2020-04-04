@@ -1,16 +1,13 @@
 import React from 'react';
 import classes from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
 const Profile = () => {
     return (
         <div>
-            <div>
-                <img src="https://tripmydream.cc/travelhub/travel/seo/img/304/28/gallery_1445598267_1918595054_fit.jpg" alt=""/>
-            </div>
-            <div>
-                ava + discription
-            </div>
-           <MyPosts/>
+            <ProfileInfo/>
+            <MyPosts/>
         </div>
     );
 }

@@ -2,9 +2,3 @@
     grid-area: c;
     background-color: chocolate;
 }
-.profile img {
-    width: 1200px;
-}
-.profile {
-    background-size: contain
-}
