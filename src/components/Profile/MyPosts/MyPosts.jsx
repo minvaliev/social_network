@@ -2,6 +2,11 @@ import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from "./Posts/Post";
 
+let postData = [
+    {id: 1, message: 'Hi, my friend', likesCount: 5},
+    {id: 2, message: 'Good By, my girlfriend', likesCount: 27},
+]
+
 const MyPosts = () => {
     return (
         <div className={classes.postBlock}>
@@ -15,8 +20,8 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={classes.posts}>
-               <Post name='Albert' message='Hi, my friend' likesCount='5'/>
-               <Post name='Albert' message='Good By, my girlfriend' likesCount='27'/>
+               <Post message={postData[0].message} likesCount={postData[0].likesCount}/>
+               <Post message={postData[1].message} likesCount={postData[1].likesCount}/>
             </div>
         </div>
     );
